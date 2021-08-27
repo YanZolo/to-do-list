@@ -22,7 +22,7 @@ class List extends React.Component {
                             <p>{item.status}</p>
                         </div>
 
-                            <button className='btn btn-outline-danger ' onClick={()=>{this.props.deleteTask(index)}}>supprimer</button>
+                            <button className='btn btn-outline-danger ' onClick={()=>{this.props.deleteTask(item,index)}}>supprimer</button>
 
                     </div>
 

@@ -16,18 +16,19 @@ class App extends React.Component {
   }
 
 
-  deleteTask = (index) => {
+  deleteTask = (item,index) => {
 
     console.log('task to remove is in index:',index)
 
     const cloneTasks = [...this.state.tasks]
     cloneTasks.splice(index, 1)
     this.setState({ tasks: cloneTasks })
+    console.log('task removed:', item.description)
   }
 
   render() {
 
-    console.log('task value:', this.state.tasks)
+    console.log('tasks values is update:', this.state.tasks)
     return (
       <>
 
